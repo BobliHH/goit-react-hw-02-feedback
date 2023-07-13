@@ -18,7 +18,7 @@ export class App extends Component {
           <FeedbackOptions addFeedback={this.addFeedback} />
         </section>
         <section>
-          {feedbackCount === 0 && <h4> There is no feedback</h4>}
+          {feedbackCount === 0 && <h4> There is no feedback.</h4>}
           {feedbackCount !== 0 && <h4> Statistics</h4>}
           {feedbackCount !== 0 && (
             <Statistics {...this.state} total={feedbackCount} />
